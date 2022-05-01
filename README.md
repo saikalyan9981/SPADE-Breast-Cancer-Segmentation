@@ -16,12 +16,15 @@ The directory paths will need to be modified to reflect your local paths.
   a) experiment_name = 'res_spadeSCRes'
     The convolutional layers in the UNet encoder are Resnet implementation
     The contextual blocks are the output of two sequential SPADE blocks summed with the input context image
+  
   b) experiment_name = 'res_spadeRes'
     The convolutional layers in the UNet encoder are Resnet implementation
     The contextual blocks are the output of two sequential SPADE blocks summed with the output of one SPADE block
+  
   c) experiment_name = 'conv_spadeRes'
     The convolutional layers in the UNet encoder are the original UNet implemention with two sequential convolutions
     The contextual blocks are the output of two sequential SPADE blocks summed with the output of one SPADE block
+  
   d) experiment_name = 'conv_spadeSCRes'
     The convolutional layers in the UNet encoder are the original UNet implemention with two sequential convolutions
     The contextual blocks are the output of two sequential SPADE blocks summed with the input context image
